@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurantes",
+  "info": {
+    "singularName": "restaurante",
+    "pluralName": "restaurantes",
+    "displayName": "restaurante"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "capacidad_maxima": {
+      "type": "integer"
+    },
+    "reservacions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservacion.reservacion",
+      "mappedBy": "restaurante"
+    }
+  }
+}

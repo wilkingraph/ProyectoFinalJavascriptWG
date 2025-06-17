@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservacions",
+  "info": {
+    "singularName": "reservacion",
+    "pluralName": "reservacions",
+    "displayName": "reservacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_cliente": {
+      "type": "string"
+    },
+    "cantidad_personas": {
+      "type": "integer"
+    },
+    "horario": {
+      "type": "enumeration",
+      "enum": [
+        "Hora: 18-20",
+        "Hora: 20-22"
+      ]
+    },
+    "restaurante": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::restaurante.restaurante",
+      "inversedBy": "reservacions"
+    }
+  }
+}
