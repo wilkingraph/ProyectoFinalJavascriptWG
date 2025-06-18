@@ -9,7 +9,7 @@ Este proyecto implementa un sistema de reservas para restaurantes utilizando un 
   - Vite.js
   - React
   - JavaScript
-  - CSS (o el framework que estés usando)
+  - CSS
 
 - **Backend**:
   - Node.js
