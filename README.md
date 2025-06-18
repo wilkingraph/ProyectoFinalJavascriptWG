@@ -13,7 +13,7 @@ Este proyecto implementa un sistema de reservas para restaurantes utilizando un 
 
 - **Backend**:
   - Node.js
-  - Strapi (o cualquier tecnología backend que estés utilizando)
+  - Strapi
 
 ## Instalación y Ejecución
 
